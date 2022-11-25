@@ -24,11 +24,12 @@ export function initViewer(container, extensions) {
     });
 }
 
-export function loadModel(viewer, urn, guid) {
+export function loadModel(viewer, urn) {
     return new Promise(function (resolve, reject) {
         function onDocumentLoadSuccess(doc) {
-            const viewable = guid ? doc.getRoot().findByGuid(guid) : doc.getRoot().getDefaultGeometry();
-            resolve(viewer.loadDocumentNode(doc, viewable));
+            //const viewable = guid ? doc.getRoot().findByGuid(guid) : doc.getRoot().getDefaultGeometry();
+            //resolve(viewer.loadDocumentNode(doc, viewable));
+			resolve(viewer.loadDocumentNode(doc, doc.getRoot().getDefaultGeometry()));
         }
         function onDocumentLoadFailure(code, message, errors) {
             reject({ code, message, errors });

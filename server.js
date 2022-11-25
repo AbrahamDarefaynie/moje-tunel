@@ -1,4 +1,6 @@
 const path = require('path');
+const dotenv = require('./node_modules/dotenv/lib/main');
+dotenv.config();
 const jsonServer = require('json-server');
 const { getPublicToken } = require('./services/forge.js');
 const { getSamples } = require('./services/iot.mocked.js');

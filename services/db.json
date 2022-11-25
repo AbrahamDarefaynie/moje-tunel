@@ -1,78 +1,314 @@
 {
-    "sensors": [
-        {
-            "id": 1,
-            "code": "sensor-1",
-            "name": "Living Room",
-            "description": "Basic sensor in the middle of the living room.",
-            "groupName": "Level 1",
-            "location": {
-                "x": 31.92,
-                "y": 11.49,
-                "z": -12.97
-            },
-            "objectId": 4124
-        },
-        {
-            "id": 2,
-            "code": "sensor-2",
-            "name": "Dining Table",
-            "description": "Basic sensor at the dining table.",
-            "groupName": "Level 1",
-            "location": {
-                "x": -10,
-                "y": 41.64,
-                "z": -12.15
-            },
-            "objectId": 4111
-        },
-        {
-            "id": 3,
-            "code": "sensor-3",
-            "name": "Kitchen",
-            "description": "Basic sensor in the kitchen.",
-            "groupName": "Level 1",
-            "location": {
-                "x": 10,
-                "y": 41.64,
-                "z": -12.15
-            },
-            "objectId": 4111
-        },
-        {
-            "id": 4,
-            "code": "sensor-4",
-            "name": "Bedroom",
-            "description": "Basic sensor in the bedroom.",
-            "groupName": "Level 2",
-            "location": {
-                "x": -7.46,
-                "y": 41.47,
-                "z": 2.97
-            },
-            "objectId": 4085
-        }
-    ],
-    "channels": [
-        {
-            "id": 1,
-            "code": "temp",
-            "name": "Temperature",
-            "description": "External temperature in degrees Celsius.",
-            "type": "double",
-            "unit": "°C",
-            "min": 18.0,
-            "max": 28.0
-        },
-        {
-            "id": 2,
-            "code": "co2",
-            "name": "CO₂",
-            "description": "Level of carbon dioxide.",
-            "type": "double",
-            "unit": "ppm",
-            "min": 482.81,
-            "max": 640.00
-        }
-    ]
+  "sensors": [
+    {
+      "id": 1,
+      "code": "sensor-6313ba5313",
+      "name": "Strain Gauge(SG)",
+      "groupName": "Level 1",
+      "location": {
+        "x": 40.289611871991454,
+        "y": -19.810467136322778,
+        "z": -9.651346279929617
+      },
+      "objectId": 5274
+    },
+    {
+      "code": "sensor-0fdf932d79",
+      "name": "Thermometer",
+      "groupName": "Level 1",
+      "location": {
+        "x": 39.86275509892501,
+        "y": -19.78731681050084,
+        "z": -9.802596329870028
+      },
+      "objectId": 5321,
+      "id": 2
+    },
+    {
+      "code": "sensor-131086abae",
+      "name": "Strain Gauge(SG)",
+      "groupName": "Level 1",
+      "location": {
+        "x": 39.43492003856536,
+        "y": -19.69510691839695,
+        "z": -9.716584927237454
+      },
+      "objectId": 5278,
+      "id": 3
+    },
+    {
+      "code": "sensor-ed97d54eb4",
+      "name": "Tiltmeter",
+      "groupName": "Level 2",
+      "location": {
+        "x": 40.289507868615374,
+        "y": -19.714258800837733,
+        "z": 4.308643172477975
+      },
+      "objectId": 5289,
+      "id": 4
+    },
+    {
+      "code": "sensor-d46a00790e",
+      "name": "Anemometer",
+      "groupName": "Level 2",
+      "location": {
+        "x": 40.28952465244342,
+        "y": -19.729784491137124,
+        "z": 5.135461229563106
+      },
+      "objectId": 5296,
+      "id": 5
+    },
+    {
+      "code": "sensor-9cf1d0605b",
+      "name": "Thermometer",
+      "groupName": "Level 2",
+      "location": {
+        "x": 34.40193425082904,
+        "y": -19.80358213457369,
+        "z": 4.497920998661176
+      },
+      "objectId": 5332,
+      "id": 6
+    },
+    {
+      "code": "sensor-fea88786b0",
+      "name": "Accelerometer",
+      "groupName": "Level 2",
+      "location": {
+        "x": 24.58736711472519,
+        "y": -19.81218005181318,
+        "z": 4.6418502137562925
+      },
+      "objectId": 5329,
+      "id": 7
+    },
+    {
+      "code": "sensor-9616ebe4d7",
+      "name": "Accelerometer",
+      "groupName": "Level 2",
+      "location": {
+        "x": 14.792268282376552,
+        "y": -19.806115574084487,
+        "z": 4.658750041377711
+      },
+      "objectId": 5326,
+      "id": 8
+    },
+    {
+      "code": "sensor-4279cd5130",
+      "name": "Accelerometer",
+      "groupName": "Level 2",
+      "location": {
+        "x": 4.834510049551367,
+        "y": -19.772603412264885,
+        "z": 4.677166335776679
+      },
+      "objectId": 5335,
+      "id": 9
+    },
+    {
+      "code": "sensor-92af0d77e5",
+      "name": "Strain Gauge",
+      "groupName": "Level 3",
+      "location": {
+        "x": 1.4370345842647223,
+        "y": -19.980318452293766,
+        "z": 7.602694694448384
+      },
+      "objectId": 5305,
+      "id": 10
+    },
+    {
+      "code": "sensor-bd2d08d90b",
+      "name": "Strain Gauge",
+      "groupName": "Level 3",
+      "location": {
+        "x": 1.406958325036347,
+        "y": -19.885775249814476,
+        "z": 8.766947518190772
+      },
+      "objectId": 5300,
+      "id": 11
+    },
+    {
+      "code": "sensor-bbef6c3f29",
+      "name": "Thermometer",
+      "groupName": "Level 3",
+      "location": {
+        "x": 0.00659801005921512,
+        "y": -19.939391661388143,
+        "z": 8.835271145021142
+      },
+      "objectId": 5338,
+      "id": 12
+    },
+    {
+      "code": "sensor-03b2ddab3d",
+      "name": "Strain Gauge",
+      "groupName": "Level 3",
+      "location": {
+        "x": -0.12571672095274697,
+        "y": -19.803149303791557,
+        "z": 8.190858536685974
+      },
+      "objectId": 5311,
+      "id": 13
+    },
+    {
+      "code": "sensor-766f121ce4",
+      "name": "Tiltmeter",
+      "groupName": "Level 2",
+      "location": {
+        "x": -40.28957239194333,
+        "y": -19.7739535480168,
+        "z": 4.3272784074094774
+      },
+      "objectId": 5285,
+      "id": 14
+    },
+    {
+      "code": "sensor-337d41518f",
+      "name": "Strain Gauge",
+      "groupName": "Level 1",
+      "location": {
+        "x": -40.28953508732098,
+        "y": -19.739444590565185,
+        "z": -9.701528179154147
+      },
+      "objectId": 5266,
+      "id": 15
+    },
+    {
+      "code": "sensor-62118940e0",
+      "name": "Thermometer",
+      "groupName": "Level 1",
+      "location": {
+        "x": -39.90129970735671,
+        "y": -19.807258045559728,
+        "z": -9.857800596076814
+      },
+      "objectId": 5318,
+      "id": 16
+    },
+    {
+      "code": "sensor-c7160fee6e",
+      "name": "Strain Gauge",
+      "groupName": "Level 1",
+      "location": {
+        "x": -39.46985644520782,
+        "y": -19.81751067249616,
+        "z": -9.672719973280431
+      },
+      "objectId": 5270,
+      "id": 17
+    },
+    {
+      "code": "sensor-bdf764cf2f",
+      "name": "Sensor bdf764cf2f",
+	  "groupName": "Free",
+      "location": {
+        "x": 6.037659874289012,
+        "y": -5.2941076911338385,
+        "z": -11.862733840942376
+      },
+      "objectId": 4798,
+      "id": 22
+    },
+    {
+      "code": "sensor-dcca107661",
+      "name": "Sensor dcca107661",
+	  "groupName": "Free",
+      "location": {
+        "x": -11.44067659380178,
+        "y": 3.4548815768422116,
+        "z": 8.618120745174135
+      },
+      "objectId": 4165,
+      "id": 23
+    },
+    {
+      "code": "sensor-ab39d58dc1",
+      "name": "Sensor ab39d58dc1",
+	  "groupName": "Free",
+      "location": {
+        "x": -15.971484504471489,
+        "y": 3.880119040883104,
+        "z": 8.359780089869696
+      },
+      "objectId": 4201,
+      "id": 24
+    },
+    {
+      "code": "sensor-24b49ec086",
+      "name": "Sensor 24b49ec086",
+	  "groupName": "Free",
+      "location": {
+        "x": -39.59075355298344,
+        "y": 1.459632785762459,
+        "z": 5.643932916922482
+      },
+      "objectId": 4090,
+      "id": 25
+    },
+    {
+      "code": "sensor-ed3c0c4e67",
+      "name": "Sensor ed3c0c4e67",
+	  "groupName": "Free",
+      "location": {
+        "x": -39.59469275320365,
+        "y": 8.654953383752073,
+        "z": 5.670030766905821
+      },
+      "objectId": 4096,
+      "id": 26
+    },
+    {
+      "code": "sensor-01512258c9",
+      "name": "Sensor 01512258c9",
+	  "groupName": "Free",
+      "location": {
+        "x": 11.905751500090329,
+        "y": 5.076076736597074,
+        "z": 8.599052049740857
+      },
+      "objectId": 4417,
+      "id": 28
+    },
+    {
+      "code": "sensor-e273664c75",
+      "name": "Sensor e273664c75",
+	  "groupName": "Free",
+      "location": {
+        "x": 17.130177374940327,
+        "y": 3.953237759769765,
+        "z": 8.280523490255996
+      },
+      "objectId": 4381,
+      "id": 29
+    }
+  ],
+  "channels": [
+    {
+      "id": 1,
+      "code": "temp",
+      "name": "Temperature",
+      "description": "External temperature in degrees Celsius.",
+      "type": "double",
+      "unit": "°C",
+      "min": 18,
+      "max": 28
+    },
+    {
+      "id": 2,
+      "code": "co2",
+      "name": "CO₂",
+      "description": "Level of carbon dioxide.",
+      "type": "double",
+      "unit": "ppm",
+      "min": 482.81,
+      "max": 640
+    }
+  ]
 }

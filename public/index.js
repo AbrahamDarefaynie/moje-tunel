@@ -4,8 +4,8 @@ import { initTimeline } from './timeline.js';
 import { MyDataView } from './dataview.js';
 import './sensormanager.js';
 
-const FORGE_MODEL_URN = 'dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6cGV0cmJyb3otc2FtcGxlcy9yYWNfYmFzaWNfc2FtcGxlX3Byb2plY3RfMjAyMC5ydnQ';
-const FORGE_MODEL_VIEW = 'e4baebbb-4ad6-8223-7f6a-cad4f0bb353a';
+const FORGE_MODEL_URN = 'dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6YWIxMjM0LzA5MjlDYWJsZVR5cGUucnZ0';
+//const FORGE_MODEL_VIEW = 'e4baebbb-4ad6-8223-7f6a-cad4f0bb354a';
 const FORGE_MODEL_DEFAULT_FLOOR_INDEX = 2;
 const DEFAULT_TIMERANGE_START = new Date('2022-01-01');
 const DEFAULT_TIMERANGE_END = new Date('2022-01-30');
@@ -45,7 +45,9 @@ function onCurrentChannelChanged(channelId) {
 
 initTimeline(document.getElementById('timeline'), onTimeRangeChanged, onTimeMarkerChanged);
 const viewer = await initViewer(document.getElementById('preview'), IOT_EXTENSION_IDS.concat(['Iot.SensorManager', 'Autodesk.AEC.LevelsExtension']));
-loadModel(viewer, FORGE_MODEL_URN, FORGE_MODEL_VIEW);
+//loadModel(viewer, FORGE_MODEL_URN, FORGE_MODEL_VIEW);
+//console.log("load");
+loadModel(viewer, FORGE_MODEL_URN);
 viewer.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, async function () {
     // Setup and auto-activate IoT extensions
     for (const extensionID of IOT_EXTENSION_IDS) {
