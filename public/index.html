@@ -7,23 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/style.css">
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/style.min.css" type="text/css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <!-- <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script> -->
+    
+    
+    <!-- Moji Kinetic -->
+    <!-- <script src="/public/RobotExt.js"></script> -->
+    
 
-    <title>Autodesk Forge IoT Example</title>
+    <!-- <title>Autodesk Forge IoT Example</title> -->
+    <title>Autodesk Forge: Tunnel Project DIG</title>
 </head>
 
 <body>
     <div id="header">
         <img class="logo" src="/logo.png" alt="Autodesk Forge">
         <span class="title">Tunnel Project DIG</span>
+        
+        <!-- Moji Kinetic -->
+        <!-- <select name="models" id="models"></select> -->
+        <!-- <button id="upload" title="Upload New Model">Upload</button> -->
+        <!-- <input style="display: none" type="file" id="input"> -->
     </div>
     <div id="preview"></div>
     <div id="timeline"></div>
+    
+    <!-- Moji Kinetic -->
+    <div id="overlay"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.2.2/browser/pixi.js"></script>
 	<script src="vendor/chronos-etu.js"></script>
-	<script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.js"></script>
-    <script type="module" src="/index.js"></script>
+	<!-- <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.js"></script> -->
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script>
+    
+	
+	<!-- library added for editor extension and robot extension-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js" integrity="sha256-kCykSp9wgrszaIBZpbagWbvnsHKXo4noDEi6ra6Y43w=" crossorigin="anonymous"></script>
+	
+    <!-- Moji Kinetic -->
+    <script src="/index.js" type="module"></script>
+	 
+    <!-- <script type="module" src="/index.js"></script> -->
+    <!-- Moji Kinetic -->
+    <!-- <script type="module" src="/public/RobotExt.js"></script> -->
+    <!-- The Viewer will be instantiated here -->
+    <!-- <div id="MyViewerDiv"></div> -->
 </body>
 
 </html>

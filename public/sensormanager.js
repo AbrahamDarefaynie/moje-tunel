@@ -17,17 +17,38 @@
 /////////////////////////////////////////////////////////////////////
 
 //ref: https://github.com/Autodesk-Forge/library-javascript-viewer-extensions/blob/0c0db2d6426f4ff4aea1042813ed10da17c63554/src/components/UIComponent/UIComponent.js#L34
-function guid(format = 'xxxxxxxxxx') {
-    let d = new Date().getTime();
 
-    return format.replace(
-        /[xy]/g,
-        function (c) {
-            let r = (d + Math.random() * 16) % 16 | 0;
-            d = Math.floor(d / 16);
-            return (c == 'x' ? r : (r & 0x7 | 0x8)).toString(16);
-        });
+function getPaddedRange(series, percentage = 0) {
+    let min = series[0] || Infinity;
+    let max = series[0] || -Infinity;
+
+    series.forEach((value) => {
+        if (value != null) {
+            min = value < min ? value : min;
+            max = value > max ? value : max;
+        }
+    });
+
+    const padding = ((max - min) * percentage) / 100.0;
+
+    return {
+        min: Math.floor(min - padding),
+        max: Math.ceil(max + padding),
+    };
 }
+
+
+// function guid(format = 'xxxxxxxxxx') {
+//     let d = new Date().getTime();
+
+//     return format.replace(
+//         /[xy]/g,
+//         function (c) {
+//             let r = (d + Math.random() * 16) % 16 | 0;
+//             d = Math.floor(d / 16);
+//             return (c == 'x' ? r : (r & 0x7 | 0x8)).toString(16);
+//         });
+// }
 
 class AdnToolInterface {
     constructor(viewer) {
